@@ -23,7 +23,6 @@ body {
 
 
 .container-nav-main {
-    border: 5px solid blue;
     width: 100%;
     height: 100%;
     display: flex;
@@ -45,12 +44,11 @@ body {
 }
 
 .main-container {
-    border: 5px solid violet;
     width: 100%;
 }
 
 .main-header {
-    border: 5px solid orange;
+    background-color: #080B12;
     height: 80px;
     display: flex;
     flex-direction: row-reverse;
@@ -64,7 +62,7 @@ body {
 }
 
 .main-home {
-    border: 5px solid lightgreen;
+    background-color: #141922;
     height: 100%;
     display: flex;
     flex-direction: row;
