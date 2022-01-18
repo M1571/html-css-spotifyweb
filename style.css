@@ -29,19 +29,38 @@ body {
     flex-direction: row;
 }
 
+/* ------------------------------------------------------- */
+
 .nav-left {
+    /* border: 5px solid violet; */
     background-color: #000000;
     width: 190px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .nav-logo, .nav-playlist, .nav-install-end {
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
+}
+
+.nav-logo {
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+}
+
+.nav-playlist {
     width: 40px;
     height: 40px;
 }
+
+.nav-install-end {
+    width: 40px;
+    height: 40px;
+}
+
+/* ------------------------------------------------------- */
 
 .main-container {
     width: 100%;
@@ -62,6 +81,7 @@ body {
 }
 
 .main-home {
+    /* border: 5px solid lightgreen; */
     background-color: #141922;
     height: 100%;
     display: flex;
@@ -74,6 +94,8 @@ body {
     width: 500px;
     height: 40px;
 }
+
+/* ------------------------------------------------------- */
 
 .container-buttons-bar {
     background-color: #282828;
