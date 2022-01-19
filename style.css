@@ -9,11 +9,9 @@ html {
     font-size: 0.7em;
 }
 
-img {
-    max-width: 100%;
-}
 
 /* ------------------------------------------------------- */
+/* Generals */
 
 body {
     width: 100vw;
@@ -23,6 +21,24 @@ body {
     color: white;
 }
 
+img {
+    max-width: 100%;
+}
+
+
+li {
+    list-style: none;
+    color: #737373;
+}
+
+a {
+    text-decoration: none;
+    color: #737373;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------- */
+/* Container Nav Left e Main */
 
 .container-nav-main {
     width: 100%;
@@ -31,12 +47,8 @@ body {
     flex-direction: row;
 }
 
-li {
-    list-style: none;
-    color: #737373;
-}
-
 /* ------------------------------------------------------- */
+/* Nav Left e Playlist */
 
 .nav-left {
     /* border: 5px solid violet; */
@@ -47,18 +59,17 @@ li {
     justify-content: flex-start;
 }
 
-/* .nav-logo, .nav-playlist, .nav-install-end {
-    border: 5px solid orange;
-} */
-
 .nav-logo {
     width: 120px;
     height: 40px;
     padding: 10px;
 }
 
+/* ------------------------------------------------------- */
+/* Home Cerca Libreria Section */
+
 .nav-home-search-lib {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     min-width: 40px;
     min-height: 40px;
 }
@@ -68,9 +79,12 @@ li {
     line-height: 2.5;
 }
 
-#home {
+.home.active {
     color: white;
 }
+
+/* ------------------------------------------------------- */
+/* Playlist */
 
 .div-playlist {
     padding-left: 20px;
@@ -92,27 +106,70 @@ li {
     height: 25px; 
     padding-top: 7px;
     padding-left: 7.5px;
+    cursor: pointer;
 }
 
 .crea {
     color: #737373;
 }
 
+/* ------------------------------------------------------- */
+/* Elenco Nome Playlist */
+
 .nav-playlist {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     min-width: 40px;
     min-height: 30px;
     padding-left: 20px;
     line-height: 2.5;
 }
 
+/* ------------------------------------------------------- */
+/* Installa app e Nome Utente */
+
 .nav-install-end {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     min-width: 40px;
     min-height: 30px;
+    flex-grow: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.download-install {
+    color: #737373;
+    order: 1;
+}
+
+.doe-wrapper {
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #737373;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.profile-doe {
+    background-color: #808080;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    overflow: hidden;
+    order: 0;
+    
+}
+
+.profile-name {
+    padding-top: 3px;
 }
 
 /* ------------------------------------------------------- */
+/* Header e Home con Album e Artisti */
 
 .main-container {
     width: 100%;
@@ -148,6 +205,7 @@ li {
 }
 
 /* ------------------------------------------------------- */
+/* Container ToolBar e Pulsanti */
 
 .container-buttons-bar {
     background-color: #282828;
