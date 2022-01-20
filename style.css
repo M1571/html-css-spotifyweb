@@ -15,8 +15,6 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     color: white;
 }
 
@@ -41,7 +39,7 @@ a {
 
 .container-nav-main {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: row;
 }
@@ -174,6 +172,7 @@ a {
 
 .main-container {
     width: 100%;
+    height: 100%;
 }
 
 .btn-upgrade {
@@ -199,26 +198,57 @@ a {
     align-items: center;
 }
 
+/* ------------------------------------------------------- */
+/* 72 Elenco Evidenza Podcast Classifiche */
+
 .main-home {
-    /* border: 5px solid lightgreen; */
+    border: 3px solid lightgreen;
     background-color: #141922;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: calc(100vh - 170px);
 }
 
 .home-list-gen {
     /* border: 1px solid orange; */
-    width: 550px;
-    height: 40px;
-    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
     color: #737373;
 }
 
 .list-name-gen {
     display: flex;
-    justify-content: space-between;    
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ------------------------------------------------------- */
+/* 75 Recently e Album con Nome */
+
+.album-wrapper {
+    border: 3px solid lightcoral;
+    height: 280px;
+    width: 100%;
+}
+
+.album-name-play {
+    margin: 0 20px 20px 20px;
+}
+
+.album-name-play strong {
+    /* border: 1px solid greenyellow; */
+    font-size: 18px;
+}
+
+.album-name-play p {
+    color: #797D81;
+}
+
+.section-album-wrap {
+    border: 3px solid lightskyblue;
+}
+
+.album-card-list {
+    border: 3px solid darkviolet;
+    margin: 0 20px;
 }
 
 /* ------------------------------------------------------- */
@@ -230,7 +260,7 @@ a {
     height: 90px;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 4;
 }
 
 /* ------------------------------------------------------- */
@@ -276,7 +306,6 @@ a {
 }
 
 .trac-control i {
-    
 }
 
 .trac-control {
