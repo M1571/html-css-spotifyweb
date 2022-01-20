@@ -9,7 +9,6 @@ html {
     font-size: 0.7em;
 }
 
-
 /* ------------------------------------------------------- */
 /* Generals */
 
@@ -38,7 +37,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Container Nav Left e Main */
+/* 10 Container Nav Left e Main */
 
 .container-nav-main {
     width: 100%;
@@ -48,7 +47,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Nav Left e Playlist */
+/* 20 Nav Left e Playlist */
 
 .nav-left {
     /* border: 5px solid violet; */
@@ -66,7 +65,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Home Cerca Libreria Section */
+/* 30 Home Cerca Libreria Section */
 
 .nav-home-search-lib {
     /* border: 1px solid orange; */
@@ -84,7 +83,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Playlist */
+/* 40 Playlist */
 
 .div-playlist {
     padding-left: 20px;
@@ -114,7 +113,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Elenco Nome Playlist */
+/* 50 Elenco Nome Playlist */
 
 .nav-playlist {
     /* border: 1px solid orange; */
@@ -125,7 +124,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Installa app e Nome Utente */
+/* 60 Installa app e Nome Utente */
 
 .nav-install-end {
     /* border: 1px solid orange; */
@@ -140,6 +139,7 @@ a {
 .download-install {
     color: #737373;
     order: 1;
+    cursor: pointer;
 }
 
 .doe-wrapper {
@@ -166,13 +166,29 @@ a {
 
 .profile-name {
     padding-top: 3px;
+    cursor: pointer;
 }
 
 /* ------------------------------------------------------- */
-/* Header e Home con Album e Artisti */
+/* 70 Header e Home con Album e Artisti */
 
 .main-container {
     width: 100%;
+}
+
+.btn-upgrade {
+    border: 1px solid white;
+    border-radius: 9999px;
+    margin-right: 10px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.text-upgrade {
+    align-self: center;
 }
 
 .main-header {
@@ -181,12 +197,6 @@ a {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-}
-
-.btn-upgrade {
-    border: 5px solid blue;
-    width: 150px;
-    height: 40px;
 }
 
 .main-home {
@@ -199,13 +209,20 @@ a {
 }
 
 .home-list-gen {
-    border: 5px solid orange;
-    width: 500px;
+    /* border: 1px solid orange; */
+    width: 550px;
     height: 40px;
+    margin-top: 20px;
+    color: #737373;
+}
+
+.list-name-gen {
+    display: flex;
+    justify-content: space-between;    
 }
 
 /* ------------------------------------------------------- */
-/* Container ToolBar e Pulsanti */
+/* 80 Container ToolBar e Pulsanti */
 
 .container-buttons-bar {
     background-color: #282828;
@@ -217,7 +234,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Comandi Sinistra */
+/* 90 Comandi Sinistra */
 
 .buttons-left {
     height: 90px;
@@ -246,7 +263,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Comandi Centrali */
+/* 100 Comandi Centrali */
 
 .buttons-center {
     border: 2px solid darkviolet;
@@ -275,7 +292,7 @@ a {
 }
 
 /* ------------------------------------------------------- */
-/* Comandi Destra */
+/* 110 Comandi Destra */
 
 .buttons-right {
     height: 90px;
@@ -284,6 +301,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .btn-volume {
