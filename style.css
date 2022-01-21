@@ -244,11 +244,62 @@ a {
 
 .section-album-wrap {
     border: 3px solid lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .album-card-list {
     border: 3px solid darkviolet;
     margin: 0 20px;
+    line-height: 2em;
+    width: calc(80% / 6);
+    cursor: pointer;
+}
+
+.album-card-list:hover i {
+    display: block;
+}
+
+.album-card-list:hover .card-top::after {
+    opacity: 0.4;
+}
+
+.card-top {
+    position: relative;
+}
+
+.card-top::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.card-top i {
+    position: absolute;
+    z-index: 5;
+    font-size: 60px;
+    top: 35%;
+    left: 35%;
+    transform: calc(-50%, -50%);
+    display: none;
+}
+
+.card-button strong {
+    font-size: 15px;
+}
+
+.card-button p {
+    color: #797D81;
+}
+
+.card-button {
+    text-align: center;
 }
 
 /* ------------------------------------------------------- */
