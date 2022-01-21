@@ -202,7 +202,7 @@ a {
 /* 72 Elenco Evidenza Podcast Classifiche */
 
 .main-home {
-    border: 3px solid lightgreen;
+    /* border: 3px solid lightgreen; */
     background-color: #141922;
     height: calc(100vh - 170px);
     overflow-y: auto;
@@ -225,13 +225,17 @@ a {
 /* 75 Recently e Album con Nome */
 
 .album-wrapper {
-    border: 3px solid lightcoral;
+    /* border: 3px solid lightcoral; */
     height: 280px;
     width: 100%;
 }
 
 .album-name-play {
     margin: 0 20px 20px 20px;
+}
+
+.album-name-play.mar {
+    margin-top: 20px;
 }
 
 .album-name-play strong {
@@ -244,13 +248,13 @@ a {
 }
 
 .section-album-wrap {
-    border: 3px solid lightskyblue;
+    /* border: 3px solid lightskyblue; */
     display: flex;
     flex-wrap: wrap;
 }
 
 .album-card-list {
-    border: 3px solid darkviolet;
+    /* border: 3px solid darkviolet; */
     margin: 0 20px;
     line-height: 2em;
     width: calc(80% / 6);
