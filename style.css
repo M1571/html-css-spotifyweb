@@ -232,6 +232,7 @@ a {
 
 .album-name-play {
     margin: 0 20px 20px 20px;
+    padding: 10px;
 }
 
 .album-name-play.mar {
@@ -366,7 +367,8 @@ a {
     
 }
 
-.trac-control i {
+.trac-control i:nth-child(3n) {
+    font-size: 20px;
 }
 
 .trac-control {
